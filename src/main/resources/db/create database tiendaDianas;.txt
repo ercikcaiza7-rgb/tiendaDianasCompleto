@@ -1,0 +1,118 @@
+create database tiendaDianas;
+use tiendaDianas;
+drop database tiendaDianas;
+INSERT INTO categorias (nombre)
+VALUES
+('INICIO'),
+('Aretes'),
+('Collares'),
+('Bolsos'),
+('Relojes'),
+('Lentes'),
+('Pulseras'),
+('Anillos');
+
+INSERT INTO productos
+(nombre, precio, stock, descripcion, categoria_id, imagen_url, marca, activo, descuento, fecha_creacion)
+VALUES
+
+-- INICIO (1)
+('Aretes', 5, 20, 'Aretes elegantes', 1, '/imagenes/aretes.jpg', 'Dianas', 1, 20, NOW()),
+('Collar', 8, 15, 'Collar moderno', 1, '/imagenes/collar.avif', 'Dianas', 1, 10, NOW()),
+('Bolso', 20, 10, 'Bolso elegante', 1, '/imagenes/bolso.webp', 'Dianas', 1, 20, NOW()),
+('Reloj', 15, 12, 'Reloj moderno', 1, '/imagenes/reloj.webp', 'Dianas', 1, 10, NOW()),
+('Lentes', 12, 14, 'Lentes de moda', 1, '/imagenes/lentes.webp', 'Dianas', 1, 5, NOW()),
+('Pulsera Dorada', 9, 15, 'Pulsera dorada elegante', 1, '/imagenes/pulsera.webp', 'Dianas', 1, 5, NOW()),
+('Anillo Elegante', 6, 20, 'Anillo elegante', 1, '/imagenes/anillos.jpg', 'Dianas', 1, 5, NOW()),
+('Collar Perlas', 11, 10, 'Collar de perlas', 1, '/imagenes/collar perla.webp', 'Dianas', 1, 10, NOW()),
+('Aretes Brillantes', 7, 18, 'Aretes brillantes', 1, '/imagenes/aretes brillantes.avif', 'Dianas', 1, 10, NOW()),
+('Pulsera Minimalista', 10, 15, 'Pulsera minimalista', 1, '/imagenes/minimalista.png', 'Dianas', 1, 30, NOW()),
+('Pulsera Trenzada', 11, 14, 'Pulsera trenzada', 1, '/imagenes/trenzada.jpg', 'Dianas', 1, 10, NOW()),
+('Anillo Clásico', 7, 20, 'Anillo clásico', 1, '/imagenes/anillo clasico.png', 'Dianas', 1, 20, NOW()),
+
+-- ARETES (2)
+('Aretes Oro', 5, 20, 'Aretes de oro', 2, '/imagenes/aretes 1.webp', 'Dianas', 1, 0, NOW()),
+('Aretes Perlas', 7, 15, 'Aretes con perlas', 2, '/imagenes/aretes 2.webp', 'Dianas', 1, 0, NOW()),
+('Aretes Plata', 6, 15, 'Aretes de plata', 2, '/imagenes/aretes 3.jpg', 'Dianas', 1, 0, NOW()),
+('Aretes Largos', 8, 10, 'Aretes largos elegantes', 2, '/imagenes/aretes 4.jpg', 'Dianas', 1, 0, NOW()),
+
+-- COLLARES (3)
+('Collar Oro', 5, 18, 'Collar de oro', 3, '/imagenes/collar 1.avif', 'Dianas', 1, 0, NOW()),
+('Collar Plata', 6, 16, 'Collar de plata', 3, '/imagenes/collar 2.avif', 'Dianas', 1, 0, NOW()),
+('Collar Corazón', 7, 12, 'Collar corazón elegante', 3, '/imagenes/collar 3.jpg', 'Dianas', 1, 0, NOW()),
+('Collar Elegante', 8, 14, 'Collar elegante moderno', 3, '/imagenes/collar 4.avif', 'Dianas', 1, 0, NOW()),
+
+-- BOLSOS (4)
+('Bolso Cuero', 5, 12, 'Bolso de cuero', 4, '/imagenes/bolso 1.webp', 'Dianas', 1, 0, NOW()),
+('Bolso Pequeño', 6, 14, 'Bolso pequeño', 4, '/imagenes/bolso 2.jpg', 'Dianas', 1, 0, NOW()),
+('Bolso Grande', 7, 10, 'Bolso grande elegante', 4, '/imagenes/bolso 3.jpg', 'Dianas', 1, 0, NOW()),
+('Bolso Elegante', 8, 10, 'Bolso elegante moderno', 4, '/imagenes/bolso 4.webp', 'Dianas', 1, 0, NOW()),
+
+-- RELOJES (5)
+('Reloj Casual', 5, 16, 'Reloj casual', 5, '/imagenes/reloj 1.webp', 'Dianas', 1, 0, NOW()),
+('Reloj Elegante', 6, 15, 'Reloj elegante', 5, '/imagenes/reloj 2.jpg', 'Dianas', 1, 0, NOW()),
+('Reloj Deportivo', 7, 10, 'Reloj deportivo', 5, '/imagenes/reloj 3.webp', 'Dianas', 1, 0, NOW()),
+('Reloj Digital', 8, 12, 'Reloj digital', 5, '/imagenes/reloj 4.jpg', 'Dianas', 1, 0, NOW()),
+
+-- LENTES (6)
+('Lentes Sol', 5, 15, 'Lentes de sol', 6, '/imagenes/lentes1.webp', 'Dianas', 1, 0, NOW()),
+('Lentes moda', 6, 15, 'Lentes modernos', 6, '/imagenes/lentes2.jpg', 'Dianas', 1, 0, NOW()),
+('Lentes negros', 7, 12, 'Lentes negros elegantes', 6, '/imagenes/lentes3.avif', 'Dianas', 1, 0, NOW()),
+('Lentes grandes', 8, 10, 'Lentes grandes modernos', 6, '/imagenes/lentes4.jpg', 'Dianas', 1, 0, NOW()),
+
+-- PULSERAS (7)
+('Pulsera Oro', 10, 10, 'Pulsera de oro', 7, '/imagenes/pulsera 1.webp', 'Dianas', 1, 0, NOW()),
+('Pulsera Plata', 8, 14, 'Pulsera de plata', 7, '/imagenes/pulsera 2.jpg', 'Dianas', 1, 0, NOW()),
+('Pulsera Perlas', 12, 10, 'Pulsera con perlas', 7, '/imagenes/pulsera 3.webp', 'Dianas', 1, 0, NOW()),
+('Pulsera Elegante', 9, 12, 'Pulsera elegante', 7, '/imagenes/pulsera 4.avif', 'Dianas', 1, 0, NOW()),
+
+-- ANILLOS (8)
+('Anillo Oro', 7, 15, 'Anillo de oro', 8, '/imagenes/anillo 1.webp', 'Dianas', 1, 0, NOW()),
+('Anillo Plata', 6, 15, 'Anillo de plata', 8, '/imagenes/anillo 2.webp', 'Dianas', 1, 0, NOW()),
+('Anillo Diamante', 15, 8, 'Anillo diamante elegante', 8, '/imagenes/anillo 3.jpg', 'Dianas', 1, 0, NOW()),
+('Anillo Elegante', 9, 10, 'Anillo elegante moderno', 8, '/imagenes/anillo 4.avif', 'Dianas', 1, 0, NOW());
+
+/*SELECCIONA LOS PRODUCTOS*/
+select * from productos; 
+SELECT * FROM usuarios;
+select * from carrito;
+SELECT * FROM categorias;
+SELECT * FROM contactos;
+SELECT * FROM detalle_pedido;
+SELECT * FROM pagos;
+SELECT * FROM pedidos;
+
+/*MUESTRA TABLAS DE LA BASE DE DATOS*/
+SHOW TABLES;
+DESCRIBE pedidos;
+DESCRIBE detalle_pedido;
+DESCRIBE pagos;
+DESCRIBE productos;
+
+/*ver la factura*/
+SELECT
+p.id,
+p.fecha,
+pr.nombre,
+d.cantidad,
+d.subtotal
+FROM pedidos p
+INNER JOIN detalle_pedido d
+ON p.id = d.pedido_id
+INNER JOIN productos pr
+ON d.producto_id = pr.id;
+
+describe productos;
+/*Agregamos un producto*/
+INSERT INTO productos
+(nombre, precio, stock, descripcion, categoria_id, imagen_url, marca, activo, descuento, fecha_creacion)
+VALUES
+('Reloj Elegance Gold', 45, 15, 'Reloj elegante color dorado para toda ocasión', 5, '/imagenes/relojElegance.jpg', 'Dianas', 1, 15, NOW());
+/*verificamos que esta alli*/
+SELECT * 
+FROM productos
+WHERE nombre = 'Reloj Elegance Gold';
+/*borrar el producto creado*/
+DELETE FROM productos
+WHERE id = 41;
+
